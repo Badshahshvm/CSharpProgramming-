@@ -1,6 +1,6 @@
 using System;
 
-#region Abstraction
+# Abstraction
 // Abstract class (Abstraction)
 abstract class Project
 {
@@ -14,9 +14,9 @@ abstract class Project
     // Abstract method
     public abstract void StartProject();
 }
-#endregion
 
-#region Encapsulation
+
+# Encapsulation
 // Encapsulated class
 class ClientProject : Project
 {
@@ -45,9 +45,9 @@ class ClientProject : Project
         Console.WriteLine($"Project '{ProjectName}' has been initiated for the client.");
     }
 }
-#endregion
 
-#region Inheritance + Polymorphism
+
+# Inheritance + Polymorphism
 // Base class
 class Employee
 {
@@ -81,9 +81,9 @@ class Developer : Employee
         Console.WriteLine($"{name} is coding in {techStack}.");
     }
 }
-#endregion
 
-#region Program Execution
+
+# Program Execution
 class Program
 {
     static void Main(string[] args)
@@ -105,4 +105,4 @@ class Program
         Console.WriteLine($"Updated Budget: ₹{project.GetBudget()}");
     }
 }
-#endregion
+
