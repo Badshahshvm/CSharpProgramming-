@@ -1,7 +1,7 @@
 using System;
 
 # Abstraction
-// Abstract class (Abstraction)
+
 abstract class Project
 {
     public string ProjectName { get; set; }
@@ -17,7 +17,7 @@ abstract class Project
 
 
 # Encapsulation
-// Encapsulated class
+
 class ClientProject : Project
 {
     private double budget; // sensitive info
