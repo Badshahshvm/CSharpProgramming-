@@ -92,6 +92,76 @@ class Program
     }
 }
 
+//Sum Of all The Array's elements
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 5, 10, 15, 20 };
+        int sum = 0;
+
+        foreach (int num in arr)
+        {
+            sum += num;
+        }
+
+        Console.WriteLine("Sum of array elements: " + sum);
+    }
+}
+
+
+//Find Maximum and Minimum Elements in a array
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 7, 2, 14, 1, 9 };
+        int max = arr[0];
+        int min = arr[0];
+
+        foreach (int num in arr)
+        {
+            if (num > max) max = num;
+            if (num < min) min = num;
+        }
+
+        Console.WriteLine("Maximum: " + max);
+        Console.WriteLine("Minimum: " + min);
+    }
+}
+
+//Search elemnts in array
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 3, 7, 2, 9, 4 };
+        int search = 9;
+        bool found = false;
+
+        foreach (int num in arr)
+        {
+            if (num == search)
+            {
+                  Console.WriteLine($"{search} found in the array.");
+                break;
+            }
+            else
+            {
+                 Console.WriteLine($"{search} not found in the array.");
+                break;
+            }
+        }
+
+       
+          
+     
+           
+    }
 
 //Satic and Instance
 
