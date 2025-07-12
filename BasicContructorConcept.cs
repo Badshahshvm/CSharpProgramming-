@@ -1,5 +1,6 @@
 using System;
 
+//Constructor
 class Student
 {
     public string name;
@@ -24,7 +25,7 @@ class Student
     }
 }
 
-using System;
+//Parametrized Constructor
 
 class Student
 {
@@ -50,6 +51,8 @@ class Student
     }
 }
 
+
+//Copy Constructor
 
 class Student{
     string name;
@@ -79,5 +82,26 @@ class HelloWorld {
     s2.getData();
     Student s3=new Student("Prince",25);
     s3.getData();
+  }
+}
+
+
+//Private Constructor
+
+class privateConstructor{
+    public static int a;
+    private privateConstructor()
+    {
+        
+    }
+    public static int getIncrement()
+    {
+        return ++a;
+    }
+}
+class HelloWorld {
+  static void Main() {
+      Console.WriteLine(privateConstructor.getIncrement());
+   
   }
 }
