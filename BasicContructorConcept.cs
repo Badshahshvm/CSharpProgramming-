@@ -105,3 +105,36 @@ class HelloWorld {
    
   }
 }
+
+
+// Static Constructor 
+
+
+class StaticConstructorDemo
+{
+    public static string name;
+    public static int age;
+
+    // Static constructor
+    static StaticConstructorDemo()
+    {
+        name = "Shivam";
+        age = 20;
+        Console.WriteLine("Static Constructor is invoked!!!");
+    }
+
+    // Default (instance) constructor
+    public StaticConstructorDemo()
+    {
+        Console.WriteLine("Default Constructor is called!!!");
+    }
+}
+
+class HelloWorld
+{
+    static void Main()
+    {
+        StaticConstructorDemo s1 = new StaticConstructorDemo();
+    }
+}
+
