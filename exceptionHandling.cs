@@ -47,9 +47,7 @@ Write your code in this editor and press "Run" button to execute it.
 
 *******************************************************************************/
 
-using System;
 
-using System;
 
 class HelloWorld
 {
@@ -95,6 +93,55 @@ class HelloWorld
         }
 
        
+    }
+}
+
+//How to handle format exception :-
+
+
+
+class HelloWorld
+{
+    static void Main()
+    {
+        string num = Console.ReadLine();
+
+        try
+        {
+            int a = int.Parse(num); 
+            Console.WriteLine(a);   
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Format is invalid");
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Number is too large or too small");
+        }
+    }
+}
+//try with multiple` catch blocks :-
+
+
+class HelloWorld
+{
+    static void Main()
+    {
+        try
+        {
+            int a = 10;
+            int b = 0;
+            int c = a / b;
+        }
+        catch (DivideByZeroException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
     }
 }
 
