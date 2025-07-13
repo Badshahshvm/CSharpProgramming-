@@ -145,3 +145,39 @@ class HelloWorld
     }
 }
 
+//Finally Block always execute whether exception occur or not :-
+
+
+class HelloWorld
+{
+    static void Main()
+    {
+        try
+        {
+            Console.Write("Enter first number: ");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter second number: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            int result = num1 / num2;
+            Console.WriteLine("Result: " + result);
+        }
+        catch (DivideByZeroException)
+        {
+            Console.WriteLine("Error: You cannot divide by zero.");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: Please enter valid numbers.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Unexpected error: " + ex.Message);
+        }
+        finally
+        {
+            Console.WriteLine("Program finished.");
+        }
+    }
+}
