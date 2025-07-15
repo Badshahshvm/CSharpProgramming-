@@ -136,4 +136,27 @@ class HelloWorld {
   }
 }
 
+//Accessing Elements in ArrayList
+using System;
+using System.Collections;
+
+class Program
+{
+    static void Main()
+    {
+        // Creating and initializing an ArrayList
+        ArrayList list = new ArrayList();
+        list.Add("Shivam");
+        list.Add(25);
+        list.Add('A');
+
+        // Accessing elements by index
+        Console.WriteLine("First Element: " + list[0]);
+        Console.WriteLine("Second Element: " + list[1]);
+        Console.WriteLine("Third Element: " + list[2]);
+    }
+}
+
+
+
 
