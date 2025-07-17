@@ -19,8 +19,16 @@ class Program
 {
     public static void Main()
     {
+        // Creating object of Child1
         Child1 c1 = new Child1();
-        c1.ShowParent();
-        c1.ShowChild1();
+        c1.ShowParent();     // Accessing Parent method
+        c1.ShowChild1();     // Accessing Child1 method
 
+        Console.WriteLine();
+
+        // Creating object of Child2
         Child2 c2 = new Child2();
+        c2.ShowParent();     // Accessing Parent method
+        c2.ShowChild2();     // Accessing Child2 method
+    }
+}
