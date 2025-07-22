@@ -15,7 +15,7 @@ Sample Input 1
 3 3 4 4
 
 
-  ///code/////
+  ///code///
 
 
   
