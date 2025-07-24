@@ -1,0 +1,32 @@
+using System;
+
+class Program
+{
+    public static string carryBag(int p, int q, int r, int s, int t)
+    {
+        // Try all combinations of any two items in two bags
+        if ((p + q <= s && r <= t) || (q + r <= s && p <= t) || (p + r <= s && q <= t))
+            return "Yes";
+        if ((p + q <= t && r <= s) || (q + r <= t && p <= s) || (p + r <= t && q <= s))
+            return "Yes";
+
+        return "No";
+    }
+
+    static void Main()
+    {
+        int testCases = int.Parse(Console.ReadLine()); // number of test cases
+
+        for (int i = 0; i < testCases; i++)
+        {
+            string[] input = Console.ReadLine().Split(' ');
+            int p = int.Parse(input[0]);
+            int q = int.Parse(input[1]);
+            int r = int.Parse(input[2]);
+            int s = int.Parse(input[3]);
+            int t = int.Parse(input[4]);
+
+            Console.WriteLine(carryBag(p, q, r, s, t));
+        }
+    }
+}
