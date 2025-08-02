@@ -15,8 +15,8 @@ namespace Day3
                 for (int j = 0; j < a.GetLength(1); j++) 
                 {
                     Console.Write($"a[{i},{j}] = ");
-                    a[i, j] = int.Parse(Console.ReadLine());
-                }
+                    a[i, j] = int.Parse(Console.ReadLine())
+                
             }
 
             display2DArray(a);
