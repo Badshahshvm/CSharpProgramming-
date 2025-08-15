@@ -12,7 +12,7 @@ Constraints
 1 ≤ Y < X ≤ 103
 1 ≤ K ≤ 103
 1 ≤ N ≤ 105
-1 ≤ Pi, Ci ≤ 103
+1 ≤ Pi, Ci ≤103
 
 
 
