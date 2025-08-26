@@ -1,4 +1,4 @@
-using System;
+using System
 
 // Declare a delegate
 delegate int ArithmeticOperation(int a, int b);
