@@ -9,7 +9,8 @@ Output Format
 For each test case, Print “HappyAmit” if Amit can select such a notebook, otherwise print “SadAmit”.
 Constraints
 1 ≤ T ≤ 105
-1 ≤ Y < X ≤ 103
+1 ≤ Y < X ≤ 103.
+  .
 1 ≤ K ≤ 103
 1 ≤ N ≤ 105
 1 ≤ Pi, Ci ≤103
