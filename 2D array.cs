@@ -6,7 +6,7 @@ namespace Day3
     {
         public static void create2dArray()
         {
-            int[,] a = new int[3, 4];
+            int[,] a = new int[3, 4]
 
             Console.WriteLine("Enter elements for 3x4 matrix:");
 
