@@ -20,7 +20,7 @@ namespace Day3
             }
 
             display2DArray(a);
-        }
+        
 
         public static void display2DArray(int[,] a)
         {
