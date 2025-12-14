@@ -1,6 +1,6 @@
 using System;
 
-//Constructor
+//Constructo
 class Student
 {
     public string name;
