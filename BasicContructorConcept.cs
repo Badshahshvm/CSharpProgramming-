@@ -5,7 +5,6 @@ class Student
 {
     public string name;
     public int rollNo;
-
     // Default constructor
     public Student()
     {
